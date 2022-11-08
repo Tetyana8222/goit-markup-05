@@ -590,7 +590,8 @@ img {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.backdrop .is-hidden {
+.is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -600,9 +601,12 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  min-width: 528px;
+  min-height: 581px;
   background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .modal-button {
@@ -611,9 +615,14 @@ img {
   top: 8px;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
-  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   background-color: #ffffff;
+  color: #000000;
+}
+.button-icon {
   color: #000000;
 }
