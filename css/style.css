@@ -479,7 +479,8 @@ li.team-item {
   border-radius: 4px;
   align-items: center;
   justify-content: space-between;
-  transition: border background-color 250ms var(--transition-timing-function);
+  transition: border 250ms,
+    background-color 250ms var(--transition-timing-function);
 }
 .customer-link:hover {
   border: 1px solid var(--accent-color);
@@ -552,7 +553,7 @@ a {
 .footer-icon {
   display: flex;
   margin: 12px;
-  transition: background-color 250ms var(--transition-timing-function);
+  transition: background 250ms var(--transition-timing-function);
 }
 
 .footer-icons:hover,
