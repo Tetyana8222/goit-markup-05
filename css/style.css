@@ -59,14 +59,12 @@ body {
 .contact-nav a:focus {
   color: var(--accent-color);
   background-color: transparent;
-  transition: transform 250ms var(--transition-timing-function);
 }
 
 .contact-nav a:hover,
 .contact-nav a:focus {
   fill: var(--accent-color);
   background-color: transparent;
-  transition: transform 250ms var(--transition-timing-function);
 }
 
 .menu-nav .link,
@@ -74,6 +72,7 @@ body {
 .logo {
   text-decoration: none;
   color: inherit;
+  transition: transform 250ms var(--transition-timing-function);
 }
 .contact-nav a {
   color: var(--primary-text-color);
@@ -423,7 +422,6 @@ li.team-item {
 .social-link:hover {
   background-color: var(--accent-color);
   fill: var(--accent-color2);
-  transition: transform 250ms var(--transition-timing-function);
 }
 .social-item .social-link {
   display: flex;
@@ -433,6 +431,7 @@ li.team-item {
   color: #afb1b8;
   width: 44px;
   height: 44px;
+  transition: transform 250ms var(--transition-timing-function);
 }
 
 .social-item:last-child {
@@ -440,6 +439,7 @@ li.team-item {
 }
 .social-icon {
   fill: #afb1b8;
+  transition: transform 250ms var(--transition-timing-function);
 }
 
 .social-icon:hover {
@@ -480,6 +480,7 @@ li.team-item {
   border-radius: 4px;
   align-items: center;
   justify-content: space-between;
+  transition: transform 250ms var(--transition-timing-function);
 }
 .customer-link:hover {
   border: 1px solid var(--accent-color);
@@ -552,6 +553,7 @@ a {
 .footer-icon {
   display: flex;
   margin: 12px;
+  transition: transform 250ms var(--transition-timing-function);
 }
 
 .footer-icons:hover,
@@ -591,6 +593,7 @@ Filter */
   font-size: 16px;
   padding: 6px 22px;
   border-radius: 4px;
+  transition: transform 250ms var(--transition-timing-function);
 }
 .filter-button:hover,
 :focus {
@@ -673,6 +676,7 @@ img {
   line-height: 28px;
   letter-spacing: 3%;
   padding: 63px 24px;
+  margin: 0;
   width: 370px;
   height: 294px;
   background-color: rgba(33, 150, 243, 0.9);
