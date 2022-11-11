@@ -430,7 +430,6 @@ li.team-item {
 .social-link:hover {
   background-color: var(--accent-color);
   fill: var(--accent-color2);
-  transition: background-color 250ms var(--transition-timing-function);
 }
 .social-item .social-link {
   display: flex;
@@ -440,6 +439,8 @@ li.team-item {
   color: #afb1b8;
   width: 44px;
   height: 44px;
+  transition: background-color 250ms var(--transition-timing-function),
+    fill 250ms var(--transition-timing-function);
 }
 
 .social-item:last-child {
