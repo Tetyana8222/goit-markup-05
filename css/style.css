@@ -196,17 +196,23 @@ body {
   pointer-events: none;
 }
 
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--general-transition-duration)
+    var(--transition-timing-function);
 }
 
 .modal-button {
