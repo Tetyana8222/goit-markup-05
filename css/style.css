@@ -58,7 +58,6 @@ body {
 .contact-nav a:focus {
   color: var(--accent-color);
   background-color: transparent;
-  transition: var(--accent-color) 250ms var(--transition-timing-function);
 }
 
 .contact-nav a:hover,
@@ -72,6 +71,7 @@ body {
 .logo {
   text-decoration: none;
   color: inherit;
+  transition: color 250ms var(--transition-timing-function);
 }
 .contact-nav a {
   color: var(--primary-text-color);
@@ -229,7 +229,6 @@ body {
 
 .button:hover,
 :focus {
-  color: var(--accent-color2);
   cursor: pointer;
 }
 
@@ -489,12 +488,13 @@ li.team-item {
   border-radius: 4px;
   align-items: center;
   justify-content: space-between;
+  transition: color var(--general-transition-duration)
+      var(--transition-timing-function),
+    border var(--general-transition-duration) var(--transition-timing-function);
 }
 .customer-link:hover {
   border: 1px solid var(--accent-color);
   background-color: var(--accent-color2);
-  transition: color var(--general-transition-duration)
-    var(--transition-timing-function);
 }
 
 .customer-link:hover .customer-icon {
@@ -575,6 +575,7 @@ a {
   transition: fill var(--general-transition-duration)
     var(--transition-timing-function);
 }
+
 .footer-box {
   display: flex;
 }
@@ -607,12 +608,12 @@ Filter */
   font-size: 16px;
   padding: 6px 22px;
   border-radius: 4px;
+  transition: background-color 250ms var(--transition-timing-function);
 }
 .filter-button:hover,
 :focus {
   color: var(--accent-color2);
   background-color: var(--accent-color);
-  transition: background-color 250ms var(--transition-timing-function);
 }
 
 .main-potrfolio {
